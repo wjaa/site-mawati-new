@@ -8,8 +8,10 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $("#navLogo").attr("src","img/logo_pq.png");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $("#navLogo").attr("src","img/logo.png");
     }
 }
 
