@@ -8,10 +8,12 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $("#navLogo").attr("src","img/logo_pq.png");
+        //$("#navLogo").attr("src","img/logo_pq.png");
+        $("#navLogo").attr("height","30");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $("#navLogo").attr("src","img/logo.png");
+       // $("#navLogo").attr("src","img/logo_v.png");
+        $("#navLogo").attr("height","74");
     }
 }
 
