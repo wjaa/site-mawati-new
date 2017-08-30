@@ -29,13 +29,13 @@ h6 {
   letter-spacing: 1px;
 }
 p {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
   font-size: 13px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
   p {
-    margin: 0 0 35px;
+    margin: 0 0 15px;
     font-size: 15px;
     line-height: 1.6;
   }
@@ -77,7 +77,8 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: black;
+  font-weight: bold;
+  color: #f8f012;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -98,8 +99,8 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: #337ab7;
-  color: white;
+  background-color: rgba(239, 102, 99, 0.65);
+  color: white !important;
 }
 .navbar-custom .nav li.active a:hover {
   color: #f2e34b;
@@ -128,7 +129,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/bg.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -222,8 +223,8 @@ a:focus {
   }
   50% {
     -moz-transform: scale(1.2);
-    transform: scale(1.2);
   }
+    transform: scale(1.2);
   100% {
     -moz-transform: scale(1);
     transform: scale(1);
@@ -267,6 +268,7 @@ a:focus {
   -moz-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -389,4 +391,14 @@ body {
 }
 .row{
   padding: 20px;
+}
+
+
+.container{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.refugos li {
+  color: red;
 }
