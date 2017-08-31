@@ -15,7 +15,12 @@ function collapseNavbar() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $("#navLogo").attr("src","img/logo_amarelo.png");
         $("#navLogo").attr("height","74");
-        $(".navbar-custom a").css("color","#f8f012");
+
+        if (window.innerWidth > 768){
+            $(".navbar-custom a").css("color","#f8f012");    
+        }
+
+        
     }
 }
 

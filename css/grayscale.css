@@ -80,6 +80,15 @@ a:focus {
   font-weight: bold;
   color: #f8f012;
 }
+
+@media (max-width: 768px) {
+  .navbar-custom a {
+   
+    color: #000;
+  }
+}  
+
+
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -401,4 +410,8 @@ body {
 
 .refugos li {
   color: red;
+}
+
+#legislacao p{
+  
 }
