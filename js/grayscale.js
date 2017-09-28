@@ -10,14 +10,21 @@ function collapseNavbar() {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $("#navLogo").attr("src","img/logo_v.png");
         $("#navLogo").attr("height","30");
-        $(".navbar-custom a").css("color","#000");
+        $(".navbar-nav a").css("color","#000");
+        $(".fone-bottom").hide();
+        $(".fone-top").show();
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $("#navLogo").attr("src","img/logo_amarelo.png");
         $("#navLogo").attr("height","74");
+        $(".fone-bottom").show();
+        $(".fone-top").hide();
 
         if (window.innerWidth > 768){
-            $(".navbar-custom a").css("color","#f8f012");    
+            $(".navbar-nav a").css("color","#f8f012");    
+            $(".fone-top").hide();
+        }else{
+            $(".fone-top").show();
         }
 
         

@@ -62,14 +62,16 @@ a:focus {
   background-color: #f2e34b;
 }
 .navbar-custom .navbar-toggle {
-  color: black;
+  color: #4A7238;
   background-color: rgba(242, 227, 73, 0.2);
-  font-size: 12px;
+  font-size: 18px;
+
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
   outline: none;
 }
+
 .navbar-custom .navbar-brand {
   font-weight: 700;
 }
@@ -402,9 +404,8 @@ body {
   padding: 20px;
 }
 
-
 .container{
-  padding-right: 5px;
+  
   padding-left: 5px;
 }
 
@@ -412,6 +413,27 @@ body {
   color: red;
 }
 
-#legislacao p{
-  
+.fone-bottom{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.fone-top{
+  float: left;
+  margin-top: 7px;
+}
+
+.fone-bottom .fone-span{
+  color: #f2e34b;
+  font-size: 18px;
+}
+.fone-top .fone-span a{
+  color: #4A7238;
+  font-size: 10px;
+  text-decoration: underline;
+}
+.fone-top .fone-span i{
+  margin-right: 5px;
+}
+.navbar-header .row{
+  padding: 2px;
 }
