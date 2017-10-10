@@ -410,7 +410,10 @@ body {
 }
 
 .refugos li {
-  color: red;
+  color: #31708f;
+}
+#modalGr .panel-info .panel-body{
+  background-color: #d9edf7;
 }
 
 .fone-bottom{
@@ -435,5 +438,11 @@ body {
   margin-right: 5px;
 }
 .navbar-header .row{
-  padding: 2px;
+  padding: 0px;
 }
+.footer-refugos{
+  margin-top: 30px;
+  font-size: 11px;
+
+}
+
