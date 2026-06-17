@@ -1,26 +1,33 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+# Site MAWATI
 
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features various content sections and a Google Maps section with a custom map marker.
+Site institucional da **MAWATI — Gerenciamento e Coleta de Resíduos Industriais**
+(Guarulhos-SP, desde 2002).
 
-## Getting Started
+## Stack
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+Site **100% estático**, sem build e sem frameworks. Não há etapa de compilação:
+basta servir os arquivos.
 
-## Bugs and Issues
+```
+index.html        ← página única
+css/mawati.css     ← estilos (CSS puro, com variáveis)
+js/mawati.js       ← interações (JS puro: menu, scroll-reveal, header)
+img/               ← logos e fotos
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
+Recursos externos (via CDN): fontes do Google Fonts e o mapa incorporado do
+Google Maps.
 
-## Creator
+## Como rodar localmente
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Qualquer servidor estático serve. Exemplo com Python:
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+```bash
+python3 -m http.server 8000
+# abra http://localhost:8000
+```
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## Deploy
 
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.# site-mawati-new
+Publique o conteúdo da pasta como arquivos estáticos (não requer Node, gulp,
+nem qualquer processo de build).
